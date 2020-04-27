@@ -1,0 +1,341 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    --var-color-base: black;
+    height: 100%;
+}
+
+@import "src/styles/marseille.css";
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/* GENERTAL */
+
+main {
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main, footer {
+    position: relative;
+    top: 0;
+}
+
+/* BANNER  */
+
+.banner {
+    position: relative;
+    height: 70vh;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(0, 179, 195, 0.185) 0%, rgba(0, 179, 195, 0.774) 100%);
+    height: 100%;
+    z-index: 100;
+    position: relative;
+}
+
+.banner video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: -4rem;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    margin-top: 3rem;
+    z-index: 100;
+}
+
+.banner-content h1 {
+    color: var(--var-light);
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.banner-content h3 {
+    color: var(--var-light);
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-home {
+    border-radius: 0.5rem;
+    padding: 15px 30px;
+    font-weight: 700;
+    background-color: var(--var-marseille-base);
+    color: rgb(51, 51, 51);
+}
+
+/* HOW IS WORKS */
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 2rem auto;
+}
+
+.container h1 {
+    text-align: start;
+    color: var(--var-marseille-base);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.utilisation div {
+    text-align: center;
+    margin: 1rem;
+}
+
+.block div i {
+    margin-bottom: 6rem;
+    color: var(--var-marseille-base);
+    font-size: 2rem;
+}
+
+.block div h3 {
+    margin: 2rem 0;
+    color: var(--var-marseille-base);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.block div img {
+    width: 320px;
+}
+
+/* PRESENTATION */
+
+.presentation {
+    align-items: center;
+}
+
+.presentation>* {
+    flex: 1;
+    align-items: center;
+}
+
+.presentation .picture {
+    margin: 0;
+    align-items: center;
+}
+
+.presentation div img {
+    width: 100%;
+}
+
+.presentation .description p, .presentation .description h1 {
+    padding: 0 4rem;
+}
+
+/* NAV-TOGGLE */
+
+.toggle-btn div {
+    display: none;
+    background-color: black;
+    width: 35px;
+    height: 5.5px;
+    margin: 7px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* SLIDE-SHOW */
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* On hover, add animation images */
+
+.mySlides a:hover img  {
+    filter: blur(2px);
+}
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* RESPONSIVE */
+
+/*LG BREAKPOINT*/
+
+/*MD BREAKPOINT*/
+
+@media screen and (max-width:1280px) {
+    .banner {
+        width: 100%;
+    }
+    div.utilisation {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .container {
+        width: 90%;
+    }
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .no-reverse {
+        flex-direction: column;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    .presentation .picture {
+        width: 70%;
+    }
+    .presentation .description {
+        margin-bottom: 6rem;
+    }
+    #logo {
+        width: 3rem;
+    }
+    .toggle-btn div {
+        display: block;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/*XS BREAKPOINT*/
+
+@media screen and (max-width:625px) {
+    .nav-links {
+        width: 55%;
+    }
+}
