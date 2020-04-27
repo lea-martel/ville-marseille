@@ -6,6 +6,7 @@ html {
     --base-font-size: 6px;
     /*COLORS SHEME*/
     --var-dark: #1A1A1A;
+    --var-dark-light: rgba(0, 0, 0, 0.1);
     --var-color-base: black;
     --var-light: #EBEBEB;
     --var-marseille-base: #00B2C3;
