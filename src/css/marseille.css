@@ -1413,7 +1413,14 @@ footer {
 .menu-list > * {
     margin: 1rem 0;
 }
+ul {
+    align-items: center;
+}
 /* NAV-TOGGLE */
+
+nav ul li a {
+    font-size: 1rem;
+}
 .toggle-btn div {
     display: none;
     background-color: black;
@@ -1514,8 +1521,25 @@ footer {
     justify-content: center;
     align-items: center;
 }
+#second-nav-bar .right-link {
+    width: 80%;
+}
+#second-nav-bar .right-link nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 #second-nav-bar ul li a {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.bar-search {
+    align-items: center;
+}
+.bar-search i {
     font-size: 1.5rem;
+    margin: 0 1rem;
 }
 /* FOOTER */
 
