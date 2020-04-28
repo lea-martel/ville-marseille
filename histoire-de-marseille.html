@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <title>Marseille: Histoire de Marseille</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="src/css/marseille.css">
+    <link rel="stylesheet" href="src/css/marseille-accueil.css">
+    <link rel="stylesheet" href="src/css/marseille-histoire-de-marseille.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/22c6f4e36c.js" crossorigin="anonymous"></script>
+    <!--JQUERY MICROSOFT CDN-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="src/js/ShowNavBar.js"></script>
+    <script src="src/js/SlideShow.js"></script>
+</head>
+
+<body>
+    <header class="nav-bar-top">
+
+        <div class="container-nav">
+            <a href="accueil.html"><img id="logo" src="src/img/logo/logo-marseille.png"
+                    alt="logo-vile-de-marseille"></a>
+            <div class="right-link">
+                <div class="barre"></div>
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="produit.html">Marseille c'est quoi ?</a></li>
+                        <li><a href="producteurs.html">Lieux touristique</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="second-nav-bar">
+            <div class="toggle-btn">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="right-link">
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="produit.html">Marseille c'est quoi ?</a></li>
+                        <li><a href="#">Lieux touristique</a>
+                            <ul class="menu-list">
+                                <li><a href="lieux-touristique/randonnees.html">Randonnées</a></li>
+                                <li><a href="lieux-touristique/plages.html">Plages</a></li>
+                                <li><a href="lieux-touristique/parcs-publics.html">Parcs publics</a></li>
+                                <li><a href="lieux-touristique/musees.html">Musées</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="bar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search..">
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="banner">
+            <div class="gradient">
+
+            </div>
+            <video autoplay muted loop id="myVideo">
+                <source src="src/video/Marseille-intro.mp4" type="video/mp4">
+            </video>
+
+            <div class="banner-content text-center col justify-content-center w-100">
+                <h1>Découvrer la ville de Marseille<br> et ses moindre recoin.</h1>
+                <h3>Rejoignez dès maintenant nos 1.151 points touristiques.</h3>
+                <form action="/action_page.php" method="get">
+                    <button type="submit" class="btn-home">VOIR LA VILLE</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="container-main justify-content-center">
+
+            <div class="container">
+                <h1>LES INCONTOURNABLES</h1>
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <a href="#"><img src="src/img/pictures/notre_dame_de_la_garde.jpg" style="width:100%"></a>
+                        <div class="text">
+                            <div class="card-body">
+                                <h1>NOTRE-DAME DE LA GARDE</h1>
+                                <p>La Bonne Mère est mondialement connue. Elle qui trône au sommet de la cité phocéenne
+                                    n'en
+                                    finit pas d'attirer les visiteurs et pèlerins venus du monde entier.</p>
+                            </div>
+                            <div class="card-footer"><a href="#">Voir plus<i class="fas fa-chevron-right"></i></a></div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <a href=""><img src="src/img/pictures/le-vieux-port.jpg" style="width:100%"></a>
+                        <div class="text">
+                            <div class="card-body">
+                                <h1>Le Vieux-Port</h1>
+                                <p>Site emblématique de Marseille avec sa sardine qui est en réalité un bateau qui a
+                                    bouché le Vieux Port. Marchez le long du Vieux Port, laissez-vous transporter. Vous
+                                    apprécierez les terrasses des restaurants et des cafés tout le long de votre balade.
+                                </p>
+                            </div>
+                            <div class="card-footer"><a href="#">Voir plus<i class="fas fa-chevron-right"></i></a></div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <a href=""><img src="src/img/pictures/vieux-marseille.jpg" style="width:100%"></a>
+                        <div class="text">
+                            <div class="card-body">
+                                <h1>Le quartier du Panier</h1>
+                                <p>En plein cœur de Marseille, ce quartier animé vous émerveillera. Pour les familles,
+                                    sachez que le Petit Train de Marseille propose un circuit avec visite guidée pour
+                                    découvrir le quartier du Panier.</p>
+                            </div>
+                            <div class="card-footer"><a href="#">Voir plus<i class="fas fa-chevron-right"></i></a></div>
+                        </div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="block">
+                    <h1>Nous avons un beau défi à résoudre ensemble : </h1>
+                    <p>Ville d’art et de culture, Marseille a plus d’une merveille à vous faire partager. Avec ses 26
+                        siècles d’existence, elle conjugue tradition et modernité. <br><br>
+
+                        La cité reste profondément marquée par son passé et exhume sans cesse les vestiges de toutes les
+                        cités qui se sont superposées au fil des siècles. Elle est un véritable parcours qui conduit le
+                        visiteur depuis ses origines grecques et romaines jusqu’à la modernité de notre siècle et les
+                        grandes réalisations architecturales du XXIe siècle, en passant par les fondations religieuses
+                        médiévales, les fortifications du XVIe siècle, les riches demeures des XVIIe et XVIIIe siècles
+                        et les nombreux édifices prestigieux construits au XIXe siècle.</p>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <!-- BLOCK-1 -->
+                <div class="block presentation row-no-wrap reverse">
+                    <div class="description right">
+                        <div>
+                            <h1>NOTRE-DAME DE LA GARDE</h1>
+                            <p>La Bonne Mère est mondialement connue. Elle qui trône au sommet de la cité phocéenne n'en
+                                finit pas d'attirer les visiteurs et pèlerins venus du monde entier.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Voir plus<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="picture">
+                        <img src="src/img/pictures/notre_dame_de_la_garde.jpg" alt="fraicheur-0">
+                    </div>
+                </div>
+                <!-- BLOCK-2 -->
+
+                <div class="block presentation row-no-wrap no-reverse">
+                    <div class="picture">
+                        <img src="src/img/pictures/le-vieux-port.jpg" alt="fraicheur-02">
+                    </div>
+                    <div class="description left">
+                        <div>
+                            <h1>Le Vieux-Port</h1>
+                            <p>Site emblématique de Marseille avec sa sardine qui est en réalité un bateau qui a bouché
+                                le
+                                Vieux Port. Marchez le long du Vieux Port, laissez-vous transporter. Vous apprécierez
+                                les
+                                terrasses des restaurants et des cafés tout le long de votre balade.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Voir plus<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- BLOCK-3 -->
+
+                <div class="block presentation row-no-wrap reverse">
+                    <div class="description right">
+                        <div>
+                            <h1>Le quartier du Panier</h1>
+                            <p>En plein cœur de Marseille, ce quartier animé vous émerveillera. Pour les familles,
+                                sachez
+                                que le Petit Train de Marseille propose un circuit avec visite guidée pour découvrir le
+                                quartier du Panier.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Voir plus<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="picture">
+                        <img src="src/img/pictures/vieux-marseille.jpg" alt="fraicheur-03">
+                    </div>
+                </div>
+                <!-- BLOCK-4 -->
+
+                <div class="block presentation row-no-wrap no-reverse">
+                    <div class="picture">
+                        <img src="src/img/pictures/mucem.jpg" alt="priorite-circuit">
+                    </div>
+                    <div class="description left">
+                        <div>
+                            <h1>MUCEM ET J4</h1>
+                            <p>Projet gouvernemental porté par le ministère de la Culture et de la Communication, le
+                                Musée
+                                des civilisations de l’Europe et de la Méditerranée, premier grand musée national
+                                consacré
+                                aux civilisations de Méditerranée pour le XXIème siècle et dirigé par Bruno Suzzarelli,
+                                a
+                                ouvert ses portes à Marseille le 7 juin 2013. Il est rapidement devenu l’un des musées
+                                de
+                                Marseille les plus visités.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Voir plus<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <ul class="social-network">
+                <h3>Suivez-nous</h3>
+                <span>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://fr.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://twitter.com/home?lang=fr"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                </span>
+            </ul>
+            <ul>
+                <a href="producteurs.html">
+                    <h3>Nos producteurs</h3>
+                </a>
+                <li><a href="#">Arnaud Cliche</a></li>
+                <li><a href="#">Loring Gabriaux</a></li>
+                <li><a href="#">Roland Gagnon</a></li>
+                <li><a href="#">Alexandrie Bouchard</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <a href="produits.html">
+                    <h3>Nos produits</h3>
+                </a>
+                <li><a href="#">XXXXX</a></li>
+                <li><a href="#">XXXXX</a></li>
+                <li><a href="#">XXXXX</a></li>
+                <li><a href="#">XXXXX</a></li>
+            </ul>
+
+            <ul>
+                <h3>Connexion</h3>
+                <li><a href="#">Pariculier</a></li>
+                <li><a href="#">Producteur</a></li>
+            </ul>
+            <ul>
+                <h3>Contact</h3>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Qui somme-nous ?</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        navSlide()
+        showSlides()
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("second-nav-bar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
