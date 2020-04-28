@@ -179,7 +179,7 @@ tr,
 td,
 textarea,
 hr {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     outline: 0;
     color: #000;
@@ -207,42 +207,6 @@ textarea:focus {
     justify-content: space-between;
     margin-bottom: 2rem;
 }
-
-input {
-    height: 2.5rem;
-}
-
-input:focus,
-textarea:focus {
-    border: 1px solid var(--var-khaki);
-}
-
-textarea {
-    padding-top: .5rem;
-}
-
-textarea,
-input {
-    height: 3.5rem;
-    resize: none;
-    border: 1px solid var(--var-light);
-    -webkit-appearance: none;
-    padding-left: .5rem;
-    border-radius: .5rem;
-}
-
-label {
-    margin-bottom: 1rem;
-}
-
-input[type="checkbox"] {
-    transform: scale(2);
-}
-
-label {
-    margin-bottom: .5rem;
-}
-
 
 /*BREAKPOINTS TYPO*/
 
@@ -362,13 +326,9 @@ footer {
 /* COLUMNS & ROWS*/
 
 .col {
-    min-height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
-
 .row-no-wrap {
     height: 100%;
     width: 100%;
@@ -454,22 +414,27 @@ footer {
 /*JUSTIFY CONTENT*/
 
 .justify-content-center {
+    display: flex;
     justify-content: center;
 }
 
 .justify-content-end {
+    display: flex;
     justify-content: end;
 }
 
 .justify-content-space-between {
+    display: flex;
     justify-content: space-between;
 }
 
 .justify-content-evenly {
+    display: flex;
     justify-content: space-evenly;
 }
 
 .justify-content-around {
+    display: flex;
     justify-content: space-around;
 }
 
@@ -499,7 +464,10 @@ footer {
     align-self: flex-start;
 }
 
-
+/* TEXT ALIGN CENTRE */
+.text-align-center {
+    text-align: center;
+}
 /*ALIGN CONTENT*/
 
 .align-content-center {
@@ -1298,6 +1266,9 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+.margin-top-10 {
+    margin-top: 10rem;
+}
 
 
 /*TRANSFORM REDUCE OR SCALE*/
@@ -1433,12 +1404,15 @@ footer {
 }
 
 /* NAVIGATION */
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
-
+.menu-list > * {
+    margin: 1rem 0;
+}
 /* NAV-TOGGLE */
 .toggle-btn div {
     display: none;
@@ -1704,3 +1678,8 @@ footer a:hover {
 }
 
 
+/* GENERAL */
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
