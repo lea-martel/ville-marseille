@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="src/img/icon-page.png" />
-       <!-- LINK CSS -->
-       <link rel="stylesheet" href="src/css/marseille.css">
-       <link rel="stylesheet" href="src/css/marseille-contact.css">
-       <!-- FONT AWESOME -->
-       <script src="https://kit.fontawesome.com/22c6f4e36c.js" crossorigin="anonymous"></script>
-       <!--JQUERY MICROSOFT CDN-->
-       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-       <script src="src/js/ShowNavBar.js"></script>
-       <script src="src/js/SlideShow.js"></script>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="src/css/marseille.css">
+    <link rel="stylesheet" href="src/css/marseille-contact.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/22c6f4e36c.js" crossorigin="anonymous"></script>
+    <!--JQUERY MICROSOFT CDN-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="src/js/ShowNavBar.js"></script>
+    <script src="src/js/SlideShow.js"></script>
     <title>contact</title>
 </head>
 
@@ -81,9 +81,15 @@
                                     <div class="form-left">
                                         <div>
                                             <label><b>Civilité :</b></label> <br><br>
-                                            <input type="radio" value="H" checked> M
-                                            <input type="radio" value="F"> Mme
-                                            <input type="radio" value="NB"> Not bynary <br>
+
+                                            <input type="radio" value="H" name="sex" checked>
+                                            <label>M</label>
+
+                                            <input type="radio" value="F" name="sex">
+                                            <label>Mme</label>
+
+                                            <input type="radio" value="NB" name="sex">
+                                            <label>Not bynary </label><br>
                                         </div>
 
                                         <div>
@@ -146,7 +152,7 @@
 
                             <div class="contact-info">
                                 <h1 class="title-yellow-medium">Ou nous trouver ?</h1>
-                                <h2>Monbeaumeuble</h2>
+                                <h2>Notre bureau de poste</h2>
 
                                 <p>144, Avenue des Champs-Élysées <br>
                                     Campus Pierre-Berger, bât. D <br>
@@ -178,6 +184,70 @@
     </main>
 
     <hr>
+    <footer>
+        <div>
+            <ul class="social-network">
+                <h3>Suivez-nous</h3>
+                <span>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://fr.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://twitter.com/home?lang=fr"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                </span>
+            </ul>
+            <ul>
+                <a href="producteurs.html">
+                    <h3>Nos producteurs</h3>
+                </a>
+                <li><a href="#">Arnaud Cliche</a></li>
+                <li><a href="#">Loring Gabriaux</a></li>
+                <li><a href="#">Roland Gagnon</a></li>
+                <li><a href="#">Alexandrie Bouchard</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <a href="produits.html">
+                    <h3>Nos produits</h3>
+                </a>
+                <li><a href="#">XXXXX</a></li>
+                <li><a href="#">XXXXX</a></li>
+                <li><a href="#">XXXXX</a></li>
+                <li><a href="#">XXXXX</a></li>
+            </ul>
+
+            <ul>
+                <h3>Connexion</h3>
+                <li><a href="#">Pariculier</a></li>
+                <li><a href="#">Producteur</a></li>
+            </ul>
+            <ul>
+                <h3>Contact</h3>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Qui somme-nous ?</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        navSlide()
+        showSlides()
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("second-nav-bar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 

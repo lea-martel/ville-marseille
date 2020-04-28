@@ -84,36 +84,12 @@ form {
 
 /* RESPONSIVE */
 
-@media screen and (max-width:749px) {
-    html {
-        font-size: calc(var(--base-font-size)*1.8);
-    }
-    .left-content form {
-        width: 80%;
-    }
-    .container-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    } 
-}
 /*MD BREAKPOINT*/
 
 @media screen and (max-width:1280px) {
-    html {
-        font-size: calc(var(--base-font-size)*1.9);
-    }
     .container-content {
         width: 100%;
         display: flex;
         flex-direction: column;
-    }
-}
-
-/*LG BREAKPOINT*/
-
-@media screen and (min-width:1280px) {
-    html {
-        font-size: calc(var(--base-font-size)*2);
     }
 }
