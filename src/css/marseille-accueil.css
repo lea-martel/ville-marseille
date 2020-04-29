@@ -111,9 +111,8 @@ main, footer {
 }
 
 .block div i {
-    margin-bottom: 6rem;
     color: var(--var-marseille-base);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .block div h3 {
@@ -163,8 +162,20 @@ main, footer {
 
 .description .card-footer {
     background-color: var(--var-dark-light);
-    text-align: end;
     height: 33px;
+    align-items: center;
+    display: flex; 
+    position: relative;
+}
+.description .card-footer div {
+    position: absolute;
+    right: 0;
+}
+.description .card-footer div:nth-child(1) {
+    padding-right: 3rem;
+}
+.description .card-footer div:nth-child(2) {
+    padding-right: 1rem;
 }
 .description .card-footer:hover {
     background-color: rgba(0, 0, 0, 0.4);

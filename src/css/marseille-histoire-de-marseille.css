@@ -2,6 +2,24 @@
 .container img {
     width: 100%;
 }
+.container .block img {
+    width: 100%;
+}
+.container .block fieldset {
+    text-decoration: none;
+    border: none;
+    color: gray;
+}
+.container .block {
+    margin-top: 4rem;
+}
+.container .block .image {
+    display: flex;
+}
+
+.container .block-first {
+    margin-top: -4rem;
+}
 
 .block h1 {
     font-size: 2rem;
@@ -37,7 +55,6 @@
 }
 
 /* scroll */
-
 
 #scroll a span {
     position: absolute;

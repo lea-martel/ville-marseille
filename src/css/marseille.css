@@ -1532,14 +1532,12 @@ nav ul:nth-last-child(1) li a i {
     justify-content: center;
     align-items: center;
 }
-#second-nav-bar nav {
-    width: 1300px;
-}
+
 #second-nav-bar nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 1300px;
 }
 #second-nav-bar ul li a {
     font-size: 1rem;
