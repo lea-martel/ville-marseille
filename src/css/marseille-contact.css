@@ -22,7 +22,7 @@
 .form-left label {
     font-size: 1.2rem;
 }
-input[type=text], input[type=password], input[type=date]{
+.contact input[type=text], .contact input[type=password], .contact input[type=date]{
     background-color:rgb(240, 240, 240);
     width: 100%;
     padding: 12px 20px;
@@ -50,7 +50,7 @@ input[type=text], input[type=password], input[type=date]{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-button {
+.contact button {
     background-color: gray;
     color: white;
     padding: 14px 20px;
@@ -61,10 +61,10 @@ button {
     margin-top: 5rem;
 
 }
-button:hover {
+.contact button:hover {
     opacity: 0.8;
 }
-form {
+.contact form {
     margin-bottom: 10rem;
 }
 .contact-info {
