@@ -1,7 +1,7 @@
 const navSlide = () => {
     const toggleBtn = document.querySelector('.toggle-btn');
-    const nav = document.querySelector('#second-nav-bar .nav-links');
-    const navLinks = document.querySelectorAll('#second-nav-bar .nav-links li')
+    const nav = document.querySelector('.second-bar');
+    const navLinks = document.querySelectorAll('.second-bar li')
 
 
     toggleBtn.addEventListener('click', () => {
@@ -19,3 +19,5 @@ const navSlide = () => {
         toggleBtn.classList.toggle('toggle');
     });
 };
+
+navSlide();
