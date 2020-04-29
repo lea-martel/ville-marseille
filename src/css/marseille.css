@@ -10,6 +10,7 @@ html {
     --var-color-base: black;
     --var-light: #EBEBEB;
     --var-marseille-base: #00B2C3;
+    --var-marseille-darke: rgb(3, 97, 105);
     --var-avocado: #DDE0B6;
     --var-cream: #F3E6BE;
     --var-tacao: #F5A883;
@@ -1628,9 +1629,6 @@ footer a:hover {
     .nav-links ul li a {
         font-size: calc(var(--base-font-size)*2.5);
     }
-    .banner {
-        width: 100%;
-    }
     div.utilisation {
         overflow: auto;
         white-space: nowrap;
@@ -1646,9 +1644,15 @@ footer a:hover {
     }
    
 }
-@media screen and (max-width:1040px) {
+@media screen and (max-width:1080px) {
     .nav-links ul li a {
         margin: 0 0.7rem;
+    }
+       
+    }
+@media screen and (max-width:1000px) {
+    .nav-links ul li a {
+        margin: 0 0.5rem;
     }
        
     }
