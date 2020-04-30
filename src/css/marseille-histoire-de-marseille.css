@@ -1,0 +1,100 @@
+@import url("marseille.css");
+.container img {
+    width: 100%;
+}
+.container .block img {
+    width: 100%;
+}
+.container .block fieldset {
+    text-decoration: none;
+    border: none;
+    color: gray;
+}
+.container .block {
+    margin-top: 4rem;
+}
+.container .block .image {
+    display: flex;
+}
+
+.container .block-first {
+    margin-top: -4rem;
+}
+
+.block h1 {
+    font-size: 2rem;
+}
+
+.banner img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: -4rem;
+}
+
+.banner {
+    position: relative;
+    height: 85vh;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    height: 100%;
+    z-index: 100;
+}
+
+.banner-content i {
+    font-size: 4rem;
+    color: var(--var-marseille-darke);
+}
+
+/* scroll */
+
+#scroll a span {
+    position: absolute;
+    left: 50%;
+    width: 58px;
+    height: 58px;
+    margin-left: -12px;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.8s infinite;
+    animation: sdb05 1.8s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
