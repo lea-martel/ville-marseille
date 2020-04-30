@@ -49,6 +49,7 @@ padding: 20px;
 
 }
 
+
 .photo{
 
 border: 3px solid black;
@@ -56,10 +57,36 @@ width: 30%;
 height: 40vh;
 margin-bottom: 2%;
 margin-left: 2%;
+animation: slideleft 4s;
+animation-delay:1s;
+
 
 
 }
 
+@keyframes slideleft{
+
+from{
+	transform: translateX(0);
+	opacity: 0;
+}
+to{
+	transform: translateX(10px);
+	opacity: 1;
+    }
+}
+
+@keyframes slideright{
+
+from{
+        transform: translateX(200px);
+        opacity: 0;
+}
+to{
+        transform: translateX(0);
+        opacity: 1;
+        }
+}
 
 .box{
 
@@ -91,6 +118,14 @@ padding: 10px;
 
 }
 
+.icone{
+
+margin-top: 2%;
+margin-left: 4%;
+width: 12%;
+
+
+}
 
 .container-right{
 
@@ -107,6 +142,8 @@ border: 3px solid black;
 width: 30%;
 height: 40vh;
 margin-bottom: 2%;
+animation: slideright 8s;
+animation-delay:4s;
 
 }
 
