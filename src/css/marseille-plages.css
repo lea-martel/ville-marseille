@@ -1,177 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body{
-
-background-color: whitesmoke;
-margin: 0;
-padding: 0;
-
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
 }
-
-.bannere{
-
-background-image: url('src/img/plages/plage-du-prado-marseille.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-position: absolute;
+/* GENERAL */
+.all-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 1500px;
 }
-
-.container{
-
-display: flex;
-flex-direction: row;
-
+.title {
+    text-align: center;
 }
-
-.flex{
-
-display: block;
-
+.container {
+    display: flex;
+    margin: 2rem 0;
 }
-
-
-.titre{
-
-display: inline-block;
-padding: 10px;
-background-color: #00B2C3;
-margin-top: 3%;
-
-
+.container div {
+    margin: 0 1rem;
 }
-
-.des{
-
-text-align: justify;
-width: 50%;
-padding: 20px;
-
-
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.bannere {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/plages/La-plage-de-la-Pointe-Rouge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-.photo{
 
-border: 3px solid black;
-width: 30%;
-height: 40vh;
-margin-bottom: 2%;
-margin-left: 2%;
-animation: slideleft 4s;
-animation-delay:1s;
-
-
-
+.titre {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #00B2C3;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-@keyframes slideleft{
-
-from{
-	transform: translateX(0);
-	opacity: 0;
+.des {
+    text-align: justify;
 }
-to{
-	transform: translateX(10px);
-	opacity: 1;
+
+.photo {
+    border: 3px solid black;
+    animation: slideleft 4s;
+    animation-delay: 1s;
+}
+.photo img  {
+   width: 100%;
+   height: 100%;
+}
+
+@keyframes slideleft {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(10px);
+        opacity: 1;
     }
 }
 
-@keyframes slideright{
-
-from{
+@keyframes slideright {
+    from {
         transform: translateX(200px);
         opacity: 0;
-}
-to{
+    }
+    to {
         transform: translateX(0);
         opacity: 1;
-        }
+    }
 }
 
-.box{
-
-display: flex;
-background-color:  rgba(11, 222, 241, 0.233);
-width: 15%;
-height: 25vh;
-border-radius: 20px;
-margin-right: 15%;
-margin-top: 4%;
-box-shadow:  12px 12px 10px rgba(27, 27, 27, 0.205)
-
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(11, 222, 241, 0.233);
+    border-radius: 20px;
+    box-shadow: 12px 12px 10px rgba(27, 27, 27, 0.205)
 }
 
-h4{
-
-display: flex;
-justify-content: center;
-padding: 8px;
-
+h4 {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
 }
 
-.infos{
-
-font-family: 'Montserrat', sans-serif;
-font-size: 17px;
-padding: 10px;
-
-
+.infos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 10px;
 }
 
-.icone{
-
-margin-top: 2%;
-margin-left: 4%;
-width: 12%;
-
-
+.icone {
+    margin-top: 2%;
+    margin-left: 4%;
+    width: 12%;
 }
-
-.container-right{
-
-display:flex;
-flex-direction: row;
-
-
+@media screen and (max-width:1520px) {
+    .all-container {
+        width: 100%;
+    }
 }
-
-.photo-right{
-
-
-border: 3px solid black;
-width: 30%;
-height: 40vh;
-margin-bottom: 2%;
-animation: slideright 8s;
-animation-delay:4s;
-
+@media screen and (max-width:1100px) {
+    .container {
+        flex-direction: column;
+        margin: 2rem 5%;
+        justify-content: center;
+    }
+    .all-container {
+        width: 800px;
+    }
+    .container div {
+        margin: 1rem 0;
+    }
+    .container div:nth-child(3) {
+        margin: 1rem 20%;
+    }
 }
-
-.titre-right{
-
-display: flex;
-background-color: #00B2C3;
-padding: 10px;
-justify-content: right;
-margin-left: 65%;
-width: 35%;
-margin-top: 2%;
-
-}
-
-.des-right{
-
-text-align: justify;
-width: 53%;
-padding: 20px;
-margin: auto;
-margin-right: 0%;
-
-}
-
-.block-right{
-
-width: 68%;
-
-
+@media screen and (max-width:810px) {
+    .container {
+        flex-direction: column;
+        margin: 2rem 5%;
+        justify-content: center;
+    }
+    .all-container {
+        width: 100%;
+    }
+    .container div {
+        margin: 1rem 0;
+    }
+    .container div:nth-child(3) {
+        margin: 1rem 20%;
+    }
 }

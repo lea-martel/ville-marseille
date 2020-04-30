@@ -32,7 +32,7 @@ main, footer {
 
 .banner {
     position: relative;
-    height: 70vh;
+    height: 85vh;
 }
 
 .gradient {
@@ -126,6 +126,16 @@ main, footer {
     width: 320px;
 }
 
+.block a {
+    width: 100%;
+}
+.test {
+    background-color: rebeccapurple;
+}
+.block {
+    position: relative;
+}
+
 /* PRESENTATION */
 
 .presentation {
@@ -145,9 +155,11 @@ main, footer {
 .presentation div img {
     width: 100%;
 }
+
 .presentation .right p, .presentation .right h1 {
     padding: 0 4rem 0 0;
 }
+
 .presentation .left p, .presentation .left h1 {
     padding: 0 0 0 4rem;
 }
@@ -155,7 +167,9 @@ main, footer {
 .description {
     height: 100%;
     position: relative;
+    background-color: red;
 }
+
 .description .card-footer a {
     color: black;
 }
@@ -164,22 +178,27 @@ main, footer {
     background-color: var(--var-dark-light);
     height: 33px;
     align-items: center;
-    display: flex; 
+    display: flex;
     position: relative;
 }
+
 .description .card-footer div {
     position: absolute;
     right: 0;
 }
+
 .description .card-footer div:nth-child(1) {
     padding-right: 3rem;
 }
+
 .description .card-footer div:nth-child(2) {
     padding-right: 1rem;
 }
+
 .description .card-footer:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 /* NAV-TOGGLE */
 
 .toggle-btn div {
@@ -240,11 +259,6 @@ main, footer {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* On hover, add animation images */
-
-.mySlides a:hover img  {
-   
-}
 /* Caption text */
 
 .text {
@@ -257,34 +271,43 @@ main, footer {
     width: 60%;
     text-align: center;
 }
+
 .card-body {
     padding: 24px;
 }
+
 .text p {
     color: var(--var-light);
     text-align: start;
 }
+
 .text h1 {
     font-size: 3rem;
 }
+
 .card-footer {
     background-color: var(--var-dark-light);
     text-align: end;
     padding: 10px 24px;
 }
+
 .card-footer:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 .card-footer a {
     color: var(--var-light);
     font-weight: 0;
 }
+
 .card-footer a:hover {
     color: var(--var-marseille-base);
 }
+
 .card-footer a i {
     padding: 0 1rem;
 }
+
 /* Number text (1/3 etc) */
 
 .numbertext {
@@ -353,7 +376,6 @@ main, footer {
         overflow: auto;
         white-space: nowrap;
     }
-
     .container {
         width: 90%;
     }
@@ -400,7 +422,6 @@ main, footer {
     body {
         overflow-x: hidden;
     }
-
 }
 
 /*XS BREAKPOINT*/
