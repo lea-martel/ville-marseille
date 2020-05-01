@@ -92,8 +92,25 @@ body{
 
 .photo{
 
-
+    cursor: pointer;
     width: 40%;
+    border: 3px solid white;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+
+.photo:hover{
+
+    opacity: .7;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+    
 
 }
 
@@ -101,6 +118,12 @@ body{
 
     margin: 2.6rem;
 
+}
+
+.block{
+
+   margin-bottom: 0.2%; 
+   
 }
 
 
