@@ -173,3 +173,24 @@ body{
     }
 }
 
+@media screen and (max-width:1893px) {
+
+    .container{
+
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    }
+
+    .container div:nth-child(1){
+
+        width: 100%;
+    
+        }
+}
+
+@media screen and (max-width:1840px) {
+
+
+}
