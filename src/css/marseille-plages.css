@@ -145,18 +145,18 @@ body {
         opacity: 0;
     }
     to {
-        transform: translateX(10px);
+        transform: translateX(-100px);
         opacity: 1;
     }
 }
 
 @keyframes slideright {
     from {
-        transform: translateX(200px);
+        transform: translateX(0);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateX(-100px);
         opacity: 1;
     }
 }
