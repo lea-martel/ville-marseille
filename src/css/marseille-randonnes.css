@@ -18,7 +18,13 @@
     margin-top: 2rem;
 }
 
+.block-description {
+    flex: 2;
+}
+.block-image {
+    flex: 1;
 
+}
 .banner img {
     position: absolute;
     right: 0;
@@ -54,13 +60,12 @@
 .block-rand .block-description {
     width: 60%;
 }
-.block-rand .block-image {
-    width: 40%;
+.block-rand .block-image img {
+    width: 100%;
 }
-.block-rand {
-    /* background-color: red; */
+.image-min p {
+    margin: auto 0;
 }
-
 /* scroll */
 
 #scroll a span {
