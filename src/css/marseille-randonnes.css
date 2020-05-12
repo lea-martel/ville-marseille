@@ -23,7 +23,6 @@
 }
 .block-image {
     flex: 1;
-
 }
 .banner img {
     position: absolute;
@@ -59,6 +58,16 @@
 }
 .block-rand .block-description {
     width: 60%;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.description div {
+    width: 100%;
+    align-items: center;
 }
 .block-rand .block-image img {
     width: 100%;
@@ -132,16 +141,28 @@
 }
 
 @media screen and (max-width:820px) {
-    .container {
-        width: 100%;
-    }
-    .container p {
-        margin: 2rem;
-    }
+ 
 }
 
 @media screen and (max-width:960px) {
     .block-description {
         flex-direction: column;
     }
+    .block-rand .block-description {
+        width: 100%;
+    }
+    .block-rand {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 0 4rem;
+        width: initial;
+
+    }
+
+    /* .block-rand .block-image img {
+        width: 50%;
+    } */
 }
